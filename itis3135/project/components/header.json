@@ -1,0 +1,64 @@
+{
+    "titles": [
+        {
+            "title" : "GNC Worship",
+            "id" : "home"
+        },
+        {
+            "title" : "Events",
+            "id" : "events"
+        },
+        {
+            "title" : "Register",
+            "id" : "register"
+        },
+        {
+            "title" : "Gallery",
+            "id" : "gallery"
+        },
+        {
+            "title" : "Contact",
+            "id" : "contact"
+        },
+        {
+            "title" : "About",
+            "id" : "about"
+        }
+    ],
+    "menuLinks": [
+        {
+            "name": "Home",
+            "url": "./",
+            "openInNewTab": false
+        },
+        {
+            "name": "Events",
+            "url": "events.html",
+            "openInNewTab": false
+        },
+        {
+            "name": "Register",
+            "url": "register.html",
+            "openInNewTab": false
+        },
+        {
+            "name": "Gallery",
+            "url": "gallery.html",
+            "openInNewTab": false
+        },
+        {
+            "name": "Contact",
+            "url": "contact.html",
+            "openInNewTab": false
+        },
+        {
+            "name": "About",
+            "url": "about.html",
+            "openInNewTab": false
+        }
+    ],
+    "validation": {
+        "link": "https://lint.page/kit/4d0fe3.js",
+        "crossorigin": "anonymous" 
+    }
+}

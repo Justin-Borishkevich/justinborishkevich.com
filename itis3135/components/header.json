@@ -1,0 +1,102 @@
+{
+    "title": "Justin Borishkevich Judicious Beaver || ITIS3135",
+    "menuLinks": [
+        {
+            "name": "Home",
+            "url": "./",
+            "openInNewTab": false
+        },
+        {
+            "name": "Introduction",
+            "url": "introduction.html",
+            "openInNewTab": false
+        },
+        {
+            "name": "Contract",
+            "url": "contract.html",
+            "openInNewTab": false
+        },
+        {
+            "name": "About",
+            "url": "about.html",
+            "openInNewTab": false
+        }
+    ],
+    "sublinks": [
+        {
+            "name": "CRAPPY Webpage",
+            "url": "stuff/CRAPPY- !wEPage.html",
+            "openInNewTab": true
+        },
+        {
+            "name": "Website Evaluations",
+            "url": "website_evaluations.html",
+            "openInNewTab": false
+        },
+        {
+            "name": "Project Overview",
+            "url": "project_overview.html",
+            "openInNewTab": false
+        },
+        {
+            "name": "Tables",
+            "url": "tables.html",
+            "openInNewTab": false
+        },
+        {
+            "name": "Forms",
+            "url": "forms.html",
+            "openInNewTab": false
+        },
+        {
+            "name": "Hobby Page",
+            "url": "hobby/index.html",
+            "openInNewTab": true
+        },
+        {
+            "name": "Emmet Page",
+            "url": "emmet.html",
+            "openInNewTab": true
+        },
+        {
+            "name": "JavaScript Page",
+            "url": "firstscripts.html",
+            "openInNewTab": false
+        },
+        {
+            "name": "BYO Intro Page",
+            "url": "byo_intro.html",
+            "openInNewTab": false
+        },
+        {
+            "name": "Drawing Page",
+            "url": "drawing.html",
+            "openInNewTab": false
+        },
+        {
+            "name": "Slide Show",
+            "url": "slideshow.html",
+            "openInNewTab": false
+        },
+        {
+            "name": "Project",
+            "url": "project/index.html",
+            "openInNewTab": true
+        },
+        {
+            "name" : "Review 1",
+            "url" : "review1.html",
+            "openInNewTab" : false
+        },
+        {
+            "name" : "Review 2",
+            "url" : "review2.html",
+            "openInNewTab" : false
+        }
+    ],
+    "validation": {
+        "link": "https://lint.page/kit/4d0fe3.js",
+        "crossorigin": "anonymous" 
+    },
+    "slogan": "Outfitting Lawyers with a Dam Good Look"
+}

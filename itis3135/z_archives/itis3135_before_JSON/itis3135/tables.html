@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Justin Borishkevich Judicious Beaver || ITIS3135 Tables</title>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/default.css">
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>Tables</h2>
+            <h3>My Tabular Data</h3>
+            <ol>
+                <li>Sam Altman - SamAltman@BeaverLawInc.com - 10</li>
+                <li>John Smith - JohnSmith@BeaverLawInc.com - 5</li>
+                <li>Lorry Jane - LorryJane@BeaverLawInc.com - 2</li>
+                <li>Bob Lobotomy - BobLobotomy@BeaverLawInc.com - 6</li>
+                <li>Ringo Starter - RingoStarter@BeaverLawInc.com - 30</li>
+                <li>Jimi Cartoon - JimiCartoon@BeaverLawInc.com - 23</li>
+                <li>Gus Fring - GusFring@BeaverLawInc.com - 2</li>
+                <li>Charlie Brow - CharlieBrow@BeaverLawInc.com - 1</li>
+                <li>Elvis Parsley - ElvisParsley@BeaverLawInc.com - 23</li>
+                <li>Karl jinx - Karljinx@BeaverLawInc.com - 50</li>
+            </ol>
+
+            <h3>Employee Data in Simple Table</h3>
+            <table>
+                <thead
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Years of Service</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sam Altman</td>
+                        <td>SamAltman@BeaverLawInc.com</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>John Smith</td>
+                        <td>JohnSmith@BeaverLawInc.com</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Lorry Jane</td>
+                        <td>LorryJane@BeaverLawInc.com</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Bob Lobotomy</td>
+                        <td>BobLobotomy@BeaverLawInc.com</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Ringo Starter</td>
+                        <td>RingoStarter@BeaverLawInc.com</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Jimi Cartoon</td>
+                        <td>JimiCartoon@BeaverLawInc.com</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>Gus Fring</td>
+                        <td>GusFring@BeaverLawInc.com</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Charlie Brow</td>
+                        <td>CharlieBrow@BeaverLawInc.com</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Elvis Parsley</td>
+                        <td>ElvisParsley@BeaverLawInc.com</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>Karl jinx</td>
+                        <td>Karljinx@BeaverLawInc.com</td>
+                        <td>50</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Employee Data in Complex Table</h3>
+            <figure>
+                <table>
+                    <thead>
+                    <tr>
+                        <th scope="col">Category</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Years of Service</th>
+                        <th scope="col">Salary</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">Bosses</td>
+                            <td>Sam Altman</td>
+                            <td>SamAltman@BeaverLawInc.com</td>
+                            <td>10</td>
+                            <td>$170,060.99</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="7" scope="rowgroup">Managers</td>
+                            <td scope="row">John Smith</td>
+                            <td>JohnSmith@BeaverLawInc.com</td>
+                            <td>5</td>
+                            <td>$1,000.00</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Lorry Jane</td>
+                            <td>LorryJane@BeaverLawInc.com</td>
+                            <td>2</td>
+                            <td>$25,000.00</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Bob Lobotomy</td>
+                            <td>BobLobotomy@BeaverLawInc.com</td>
+                            <td>6</td>
+                            <td>$4,000.00</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Ringo Starter</td>
+                            <td>RingoStarter@BeaverLawInc.com</td>
+                            <td>30</td>
+                            <td>$12,000.00</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Jimi Cartoon</td>
+                            <td>JimiCartoon@BeaverLawInc.com</td>
+                            <td>23</td>
+                            <td>$23,000.00</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Gus Fring</td>
+                            <td>GusFring@BeaverLawInc.com</td>
+                            <td>2</td>
+                            <td>$8,000.00</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Charlie Brow</td>
+                            <td>CharlieBrow@BeaverLawInc.com</td>
+                            <td>1</td>
+                            <td>$5,000.00</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" scope="rowgroup">Interns</td>
+                            <td scope="row">Elvis Parsley</td>
+                            <td>ElvisParsley@BeaverLawInc.com</td>
+                            <td>23</td>
+                            <td>$4.75</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Karl jinx</td>
+                            <td>Karljinx@BeaverLawInc.com</td>
+                            <td>50</td>
+                            <td>$10.98</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" scope="row" aria-label="Total Years of Service and Total Salary">Total Years of Service:</td> 
+                            <td>152</td>
+                            <td>$248,075.72</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <figcaption>Employee Data in Complex Table</figcaption>
+            </figure>
+
+
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="scripts/HTMLinclude.min.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Justin Borishkevich Judicious Beaver || ITIS3135 Contract</title>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/default.css">
+        <style>
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #4B4444;
+                border-radius: 10px;
+            }
+
+            h2 {
+                font-family: Arsenal SC, times new roman;
+                font-size: 2.5em;
+                margin-bottom: -40px;
+            }
+
+            h3 {
+                font-family: Arsenal SC, times new roman;
+                font-size: 2em;
+                margin-bottom: 50px;
+            }
+
+            button {
+                font-size: 1.2rem;
+                padding: 2px 20px;
+                font-weight: bold;
+                border-radius: 5px;
+                margin: 10px;
+                background-color: #DBD6D1;
+                cursor: pointer;
+            }
+            
+            section {
+                box-sizing: border-box;
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: #DBD6D1;
+                border-radius: 10px;
+                margin-bottom: 50px;
+                padding: 20px;
+                padding-top: 30px;
+                padding-bottom: 40px;
+                font-size: 1.5rem;
+                background-color: black;
+            }
+
+            section input {
+                margin-bottom: 20px;
+                font-size: 1.2rem;
+                padding: 2px 20px;
+                border-radius: 5px;
+                margin-left: 30px;
+                background-color: #DBD6D1;
+            }
+        </style>        
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>Java Script Page</h2>
+            <h3 id="current-date"></h3>
+
+            <section id="greeting-section">            
+                <label for="name">What is your Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="mood">How are you feeling today?</label>
+                <input type="text" id="mood" name="mood">
+                <button type="button" id="greeting-button">Submit</button>
+
+                <p id="greeting">The Judicious Beaver Law Firm welcomes you!</p>
+            </section>
+
+            <section id="polygon-section">
+                <label for="number">Enter your Favorite Number between 0 and 10:</label>
+                <input type="number" id="number" name="number">
+                <button type="button" id="polygon-button">Submit</button>
+            </section>
+
+            <section id="random-item-section">  
+                <p>Click the button below to get a random Court Room Item</p>
+                <p id="random-item">Random Court Room Item:</p>
+                <button type="button" id="random-item-button">Random Item</button>
+            </section>
+
+            <section id="yearly-cases-section">
+                <p>Click the button below to get the Population of Beavers in NC as of 2010</p>
+                <p id="yearly-cases">NC Beaver Population as of 2010:</p>
+                <button type="button" id="yearly-cases-button">Total Population</button>
+            </section>
+
+            <section id="legal-case-section">
+                <h4>Legal Cases</h4>
+                <ul id="legal-cases">
+                    <li>"Beaver v. Dam Builders Anonymous: A Case of Unauthorized Waterworks"</li>
+                    <li>"The People vs. Mr. Chompington: Tree Theft and Destruction Charges"</li>
+                    <li>"Beaverton Homeowners Association v. Bucky the Beaver: Flooded Basements &amp; Dam Damages"</li>
+                    <li>"Acme Timber Co. v. Beaverton Colony: Log Piracy on the Little River"</li>
+                </ul>
+
+                <label for="legal-case">Submit Legal Case Below</label>
+                <input type="text" id="legal-case" name="legal-case" placeholder="Enter a legal case">
+                <button type="button" id="legal-case-button">Add Case</button>
+            </section>
+
+            <section id="honorary-defender-section">
+                <figure>
+                    <img src="images/beaver1.webp" alt="Beaver-image">
+                    <figcaption>Honorary Public Defender of the month: <span id="honorary-name">Sammule Manson</span></figcaption>
+                </figure>
+
+                <label for="honorary-defender">Enter New name for Honorary Public Defender</label>
+                <input type="text" id="honorary-defender" name="honorary-defender">
+                <button type="button" id="honorary-defender-button">Submit</button>
+            </section>
+
+            <section id="dishonorable-defender-section">
+                <figure>
+                    <img src="images/beaver2.webp" alt="Beaver-image">
+                    <figcaption>Dishonorable Public Defender of the month: <span id="dishonorable-name">Bavier Balkin</span></figcaption>
+                </figure>
+
+                <label for="dishonorable-defender">Enter New name for Dishonorable Public Defender</label>
+                <input type="text" id="dishonorable-defender" name="dishonorable-defender">
+                <button type="button" id="dishonorable-defender-button">Submit</button>                                                                             
+            </section>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="scripts/HTMLinclude.min.js"></script>
+        <script src="scripts/defaultscripts.js" defer></script>
+    </body>
+
+</html>
+

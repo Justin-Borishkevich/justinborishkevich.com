@@ -1,0 +1,416 @@
+html {
+    max-width: 1200px;
+    margin: 0 auto;
+    scroll-padding-top: 110px;
+}
+
+body {
+    background-color: #313638;
+    text-align: center;
+    color: #E7DAE0;
+    font-family: "Moderustic","Alegreya Sans";
+}
+
+main {
+    width: 100%;
+}
+
+h1 {
+    font-family: "Oleo Script";
+    font-size: 5em;
+    background-color: aliceblue;
+    color: #313638;
+    border-radius: 5px;
+    margin-top: 110px;
+}
+
+h2 {
+    font-family: "Moderustic";
+    font-size: 3em;
+}
+
+h3 {
+    font-family: "Moderustic";
+    font-size: 2em;
+}
+
+a{
+    color: #E8E9EB;
+}
+
+a:hover {
+    color: #F09D51;
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-align: left;
+    word-spacing: 0.1em;
+    margin: 30px;
+}
+
+section {
+    margin-top: 110px;  
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+nav {
+    position: fixed;
+    background: #1C1F21;
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    top: 0;
+    left: 0;
+    border-bottom: 3px solid #E7DAE0;
+    border-radius: 0px 0px 5px 5px;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 20px;
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    color: #E7DAE0;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+figcaption {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+figure {
+    background-color: #26282C;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+img{
+    border-radius: 10px;
+}
+
+span {
+    font-size: 0.8em;
+}
+
+/*-------- About --------*/
+#about {
+    min-height: 80vh;
+    width: 90%;
+    background-color: #1C1F21;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+}
+
+
+#about figcaption {
+    max-width: 800px;
+}
+
+#about img {
+    max-width: 800px;
+}
+
+
+/*-------- Hobby --------*/
+#hobby {
+    min-height: 80vh;
+    width: 90%;
+    background-color: #1C1F21;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+}
+
+#hobby p {
+    text-align: left;
+    font-size: 2em;
+    color: #EF9643;
+    margin-left: 40px;
+}
+
+#hobby ul {
+    list-style-type: none;
+    text-align: left;
+    font-size: 1.6em;
+    background-color: #26282C;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#hobby a {
+    display: inline-block;
+    text-decoration: none;
+    color: #F7CBA1;
+    font-weight: bold;
+    border: 5px solid #F7CBA1;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#hobby figcaption {
+    max-width: 800px;
+}
+
+#hobby img {
+    max-width: 800px;
+}
+
+
+/*-------- Memorable --------*/
+#memorable {
+    min-height: 80vh;
+    width: 90%;
+    background-color: #1C1F21;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+}
+
+#memorable figcaption {
+    width: 100%;
+}
+
+#memorable img {
+    max-width: 800px;
+    max-height: 500px;
+}
+
+#memorable #mustang img{
+    max-width: 800px;
+    max-height: 300px;
+}
+
+#memorable #typewriter img{
+    max-width: 800px;
+    max-height: 300px;
+}
+
+#memorable #battery img{
+    max-width: 800px;
+    max-height: 300px;
+}
+
+#memorable #camera #pictures img{
+    max-width: 800px;
+    max-height: 300px;
+}
+
+#memorable #fold4 img{
+    max-width: 800px;
+    max-height: 300px;
+}
+
+/*-------- Workspace --------*/
+#workspace {
+    min-height: 80vh;
+    width: 90%;
+    background-color: #1C1F21;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+}
+
+#workspace figcaption {
+    width: 100%;
+}
+
+#workspace img {
+    max-width: 600px;
+    max-height: 500px;
+}
+
+
+/*-------- How --------*/
+#how {
+    min-height: 80vh;
+    width: 90%;
+    background-color: #1C1F21;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+}
+
+
+/*-------- Why --------*/
+#why {
+    min-height: 80vh;
+    width: 90%;
+    background-color: #1C1F21;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+}
+
+
+/*-------- AI Prompts --------*/
+#ai-prompts {
+    min-height: 100vh;
+    width: 90%;
+    background-color: #1C1F21;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+}
+
+
+/*-------- Footer --------*/
+footer {
+    background-color: #1C1F21;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 0.8em;
+}
+
+footer a {
+    text-decoration: none;
+    color: #F7CBA1;
+    font-weight: bold;
+}
+
+footer img {
+    border-radius: 2px;
+}
+
+
+@media screen and (min-width: 981px) and (max-width: 1200px) {
+    html {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    html {
+        max-width: 980px;
+    }
+
+    ul {
+        margin:  40px 18px;
+    }
+
+    .contract {
+        margin:  40px 18px;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+
+    #hobby img {
+        max-width: 400px;
+    }
+
+    #workspace img {
+        max-width: 400px;
+        max-height: 200px;
+    }
+
+    #about img {
+        max-width: 400px;
+    }
+    
+
+
+}
+
+@media screen and (min-width: 350px) and (max-width: 600px) {
+    html {
+        max-width: 600px;
+        min-width: 370px;
+        overflow-x: auto;
+        font-size: 10px;
+    }
+    
+    ul {
+        margin:  40px 18px;
+        overflow-x: scroll;
+    }
+
+    .contract {
+        margin:  40px 18px;
+    }
+
+    nav a {
+        font-size: 1.3em;
+    }
+    #memorable img {
+        max-width: 300px;
+        max-height: 200px;
+    }
+    
+    #memorable #mustang img{
+        max-width: 300px;
+        max-height: 150px;
+    }
+
+    #memorable #shock img{
+        max-width: 150px;
+        max-height: 150px;
+    }
+    
+    #memorable #typewriter img{
+        max-width: 800px;
+        max-height: 100px;
+    }
+    
+    #memorable #battery img{
+        max-width: 800px;
+        max-height: 200px;
+    }
+    
+    #memorable #camera #pictures img{
+        max-width: 800px;
+        max-height: 100px;
+    }
+    
+    #memorable #fold4 img{
+        max-width: 200px;
+        max-height: 150px;
+    }
+
+    #hobby img {
+        max-width: 200px;
+    }
+
+    #workspace img {
+        max-width: 200px;
+        max-height:150px;
+    }
+
+    #about img {
+        max-width: 200px;
+    }
+    
+}
+
+

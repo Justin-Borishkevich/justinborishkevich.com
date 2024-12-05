@@ -1,0 +1,54 @@
+html {
+    box-sizing: border-box;
+    scroll-padding-top: 70px; /* Adjust based on your fixed header height */
+}
+
+main {
+    margin-top: 40px;
+    background-color: #1A1F23;
+    border-radius: 10px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#contact-info p{
+    font-size: 2.5em;
+    margin-bottom: 8px;
+}
+
+#contact-info p:last-of-type{
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+#contact-info a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #90888c;
+    transition: color 0.3s ease;
+}
+
+#contact-info a:hover {
+    color: white;
+
+}
+
+#contact-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+

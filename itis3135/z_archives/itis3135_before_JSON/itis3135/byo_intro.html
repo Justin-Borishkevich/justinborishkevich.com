@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Justin Borishkevich Judicious Beaver || ITIS3135 About</title>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="scripts/survey.js" defer></script>
+        <style>
+            #byo-intro-output {
+                display: none;
+            }
+
+            #byo-intro-form {
+                display: block;
+            }
+
+            input[type="text"] {
+                box-sizing: border-box;
+                width: 400px;
+                height: 2rem;
+                padding: 5px 10px;
+            }
+
+            input[type="submit"], button[type="reset"], button[type="button"], input[type="file"] {
+                background-color: #282A2A;
+                color: #E8EEF2;
+                margin-right: 30px;
+                padding: 5px 30px;
+                border-radius: 8px;
+                border-color: #E8EEF2;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>BYO Intro</h2>
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+
+
+            <section id="byo-intro-form-section">
+                <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+
+                <form id="byo-intro-form">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" required value="Justin"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Borish" required><br><br>
+                    
+                    <label for="mascot">Mascot:</label><br>
+                    <input type="text" id="mascot" name="mascot" value="Beaver" required><br><br>
+                    
+                    <label for="image">Image:</label><br>
+                    <input type="file" id="image" name="image" accept=".png, .jpg, .jpeg"><br><br>
+                    
+                    <label for="image-caption">Image Caption:</label><br>
+                    <input type="text" id="image-caption" name="image-caption" value="Image of me" required><br><br>
+                    
+                    <label for="personal-background">Personal Background:</label><br>
+                    <textarea id="personal-background" name="personal-background" rows="4" cols="50" placeholder="Born in the US" required></textarea><br><br>
+                    
+                    <label for="professional-background">Professional Background:</label><br>
+                    <textarea id="professional-background" name="professional-background" rows="4" cols="50" placeholder="Worked in multiple professions" required></textarea><br><br>
+                    
+                    <label for="academic-background">Academic Background:</label><br>
+                    <textarea id="academic-background" name="academic-background" rows="4" cols="50" placeholder="Studied at UNCC" required></textarea><br><br>
+                    
+                    <label for="background-in-web-development">Background in Web Development:</label><br>
+                    <textarea id="background-in-web-development" name="background-in-web-development" rows="4" cols="50" placeholder="Studied at UNCC" required></textarea><br><br>   
+                    
+                    <label for="primary-computer-platform">Primary Computer Platform:</label><br>
+                    <input type="text" id="primary-computer-platform" name="primary-computer-platform" value="Windows" required><br><br>
+              
+                    <label for="courses-currently-taking[]">Courses currently taking:</label><br>
+                    <section id="courses-currently-taking-section">
+                        <div id="courses-container">
+                            <input type="text" name="courses-currently-taking[]" placeholder="Course name" class="course-input">
+                        </div>
+                        <button type="button" id="add-course-button">Add Course</button><br><br>
+                    </section>
+
+                    <label for="funny-thing">Funny thing:</label><br>
+                    <input type="text" id="funny-thing" name="funny-thing" value="I am not a Beaver"><br><br>
+                    
+                    <label for="anything-else">Anything else:</label><br>
+                    <input type="text" id="anything-else" name="anything-else" value="Beavers are cool"><br><br>
+                    
+                    <p>"I understand that what is on this page is not password protected and I will not put anything here that I do not want publicly available."</p>
+                    <label for="checkbox-bookmark">I agree with the above text:</label><br>
+                    <input type="checkbox" id="checkbox-bookmark" name="checkbox-bookmark"><br><br>
+                    
+                    <input type="submit" value="Submit">
+                    <button id="reset-button" type="reset">Reset</button>
+                </form>
+            </section>
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+
+
+            <section id="byo-intro-output" display="none">
+                <h2 id="name-output">Filler || mascot</h2>
+                <figure id="image-output">
+                    
+                    <figcaption id="image-caption-output"></figcaption>
+                </figure>
+    
+                <ul>
+                    <li><b>Personal Background: </b><span id="personal-background-output">Filler</span></li>
+                    <li><b>Professional Background: </b><span id="professional-background-output">Filler</span></li>
+                    <li><b>Academic Background: </b><span id="academic-background-output">Filler</span></li>
+                    <li><b>Background in this Subject: </b><span id="background-in-web-development-output">Filler</span></li>
+                    <li><b>Primary Computer Platform: </b><span id="primary-computer-platform-output">Filler</span></li>
+                    <li><b>Courses I&#39;m Taking and Why: </b>
+                        <ul class="nested" id="courses-currently-taking-output">
+                            <li><b>ITIS 3135  - Web app Design and Development - Required</b></li>
+                        </ul>
+                    </li>
+                    <li><b>Funny/Interesting Item to Remember me by: </b><span id="funny-thing-output">Filler</span></li>
+                    <li><b>I&#39;d also like to Share: </b><span id="anything-else-output">Filler</span></li>
+                </ul>
+                <button id="fill-out-again-button">Fill out Form again</button>
+            </section>
+
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+
+
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="scripts/HTMLinclude.min.js"></script>
+    </body>
+
+</html>
+

@@ -1,0 +1,29 @@
+{
+    "images": [
+        {
+            "src": "../project/images/IMG_9476.jpg",
+            "alt": "Worhsip Night",
+            "id": 0
+        },
+        {
+            "src": "../project/images/1000006086.jpg",
+            "alt": "Worship Team",
+            "id": 1
+        },
+        {
+            "src": "../project/images/IMG_3505.jpg",
+            "alt": "Christmas Party",
+            "id": 2
+        },
+        {
+            "src": "../project/images/goodnewsyouth-3.jpeg",
+            "alt": "Youth Service",
+            "id": 3
+        },
+        {
+            "src": "../project/images/worshippic.jpg",
+            "alt": "Worship Night",
+            "id": 4
+        }
+    ]
+}

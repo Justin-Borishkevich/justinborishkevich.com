@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Justin Borishkevich Judicious Beaver || ITIS3135 Form</title>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/default.css">
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>Form</h2>
+            <p>Please fill this form to provide your feedback</p>
+            <form action="#">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label id="name-label">
+                        Full Name
+                        <input id="name" name="name" type="text" required placeholder="Please enter name">
+                    </label>
+                    <label for="number-label" id="number-label">
+                        Phone Number
+                        <input id="number" name="number" type="number" placeholder="Please enter number">
+                    </label>
+                    <label id="email-label">
+                        Email Address
+                        <input id="email" name="email" type="email" required placeholder="Please enter email">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>What services have you used?</legend>
+                    <label for="civil-procedure">
+                        <input id="civil-procedure" value="Civil-Procedure" type="checkbox">Civil Procedure
+                    </label>
+                    <label for="real-estate">
+                        <input id="real-estate" value="Real-Estate" type="checkbox">Real Estate
+                    </label>
+                    <label for="tax-law">
+                        <input id="tax-law" value="Tax-Law" type="checkbox">Tax-Law
+                    </label>
+                    <label for="intellectual-property">
+                        <input id="intellectual-property" value="Intellectual-Property" type="checkbox">Intellectual Property
+                    </label>
+                    <label for="none">
+                        <input id="none" value="None" name="none" type="checkbox">None
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Were you satisfied with your experience?</legend>
+                    <label for="yes">
+                        <input id="yes" value="Yes" name="satisfaction" type="radio" >Yes
+                    </label>
+                    <label for="no">
+                        <input id="no" value="No" name="satisfaction" type="radio" >No
+                    </label>
+                    <label for="no-service-used">
+                        <input id="no-service-used" value="No-Service-Used" name="satisfaction" type="radio" >No Service Used
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>What would you like to see improved?</legend>
+                    <label for="dropdown">Filler
+                        <select id="dropdown">
+                            <option value="">(select one)</option>
+                            <option value="1">Website</option>
+                            <option value="2">Customer Service</option>
+                            <option value="3">Email Marketing</option>
+                            <option value="4">Contact Method</option>
+                            <option value="5">Everyting is perfect!</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <input type="submit">
+                <input type="reset">
+            </form>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="scripts/HTMLinclude.min.js"></script>
+    </body>
+
+</html>
+

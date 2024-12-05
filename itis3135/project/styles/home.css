@@ -1,0 +1,121 @@
+section {
+    height : 600px;
+    border: 5px solid black;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding doesn't affect overall dimensions */
+    padding : 20px 0;
+    padding-top: 100px;
+
+    background-size: calc(100% - 40px) auto;
+    background-size: contain; /* Keep the image aspect ratio */
+    background-position: 80% 0; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-blend-mode: multiply; /* Blend the gradient with the image */
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.5); /* Customize shadow */
+    background-clip: content-box; 
+}
+
+#event-1.home  {
+    background-image: url('../images/worshippic.jpg');
+}
+
+#event-1.home p:first-of-type {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: white;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-left: 10%;
+}
+
+#register.home  {
+    background-image: url('../images/goodnewsyouth-3.jpeg');
+}
+
+#about.home {
+    background-image: url('../images/background2.png');
+}
+
+h3 {
+    font-size: 3em;
+    font-weight: 400;
+    color: white;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: -80px;
+    margin-left: 10%;
+}
+
+
+
+.home p {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: white;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-top: 20px;
+
+    width: auto;
+    max-width: 700px;
+}
+
+.home button {
+    font-size: 1.6em;
+    font-weight: 400;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.home button:hover {
+    background-color: white;
+    color: black;
+}
+
+.share-container {
+    position: relative;
+}
+
+/* Pop-up styles */
+.share-popup {
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.share-popup a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.share-popup a:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+/* Utility classes */
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}

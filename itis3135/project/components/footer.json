@@ -1,0 +1,34 @@
+{
+    "footerLinks": [
+        {
+            "name": "Instagram",
+            "icon" : "<i class=\"lni lni-instagram\"></i>",
+            "url": "https://www.instagram.com/goodnewsyouth/?hl=en",
+            "target": true
+        },
+        {
+            "name": "Good News Church",
+            "icon" : "<i class=\"lni lni-home-2\"></i>",
+            "url": "https://www.goodnewschurchclt.com",
+            "target": true
+        },
+        {
+            "name": "Facebook",
+            "icon" : "<i class=\"lni lni-facebook\"></i>",
+            "url": "https://www.facebook.com/goodnewschurchcharlotte",
+            "target": true
+        }
+    ],
+    "designLinks": [
+        {
+        "name": "JPBVisuals",
+        "url": "JPBVisuals.com/",
+        "target": true
+        },
+        {
+        "name": "Certified in JS.",
+        "url": "https://www.freecodecamp.org/certification/fcc6c516045-1a59-47c1-8060-d144f04eb386/javascript-algorithms-and-data-structures-v8",
+        "target": true
+        }
+    ]
+}

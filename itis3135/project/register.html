@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GNC Worship | Register</title>
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/register.js" defer></script>
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <link rel="stylesheet" href="styles/default.css">
+        <link rel="stylesheet" href="styles/register.css">
+        <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header-container">
+        </header>
+        <main>
+            <h2 class="title" id="register"></h2>
+            <h3>Please fill this form to send an application to join the team.</h3>
+            <form id="register-form">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label id="name-label">
+                        Full Name
+                        <input id="name" name="name" type="text" required placeholder="Please enter name">
+                    </label>
+                    <label for="number-label" id="number-label">
+                        Phone Number
+                        <input id="number" name="number" type="number" required placeholder="Please enter number">
+                    </label>
+                    <label id="email-label">
+                        Email Address
+                        <input id="email" name="email" type="email" required placeholder="Please enter email">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>What musical experience do you have?</legend>
+                    <label>
+                        <input name="instrument" value="guitar" type="checkbox">Guitar
+                    </label>
+                    <label>
+                        <input name="instrument" value="piano" type="checkbox">Piano
+                    </label>
+                    <label>
+                        <input name="instrument" value="electric-guitar" type="checkbox">Electric Guitar
+                    </label>
+                    <label>
+                        <input name="instrument" value="singing" type="checkbox">Singing
+                    </label>
+                    <label>
+                        <input name="instrument" value="synth" type="checkbox">Synth
+                    </label>
+                    <label>
+                        <input name="instrument" value="mixing" type="checkbox">Mixing
+                    </label>
+                    <label>
+                        <input name="instrument" value="Drums" type="checkbox"> Drums
+                    </label>
+                    <label>
+                        <input name="instrument" value="Violin" type="checkbox"> Violin
+                    </label>
+                    <label>
+                        <input name="instrument" value="other" type="checkbox">Other
+                    </label>
+                    <label>
+                        <textarea id="more-info" name="more-info" placeholder="Please enter more information"></textarea>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Why would you like to join?</legend>
+                    <label>
+                        <textarea id="join-info" name="join-info" placeholder="Please enter why you would like to join"></textarea>
+                    </label>
+                </fieldset>
+                <input type="submit">
+                <input type="reset">
+            </form>
+        </main>
+        <footer id="footer-container">
+        </footer>
+    </body>
+
+</html>

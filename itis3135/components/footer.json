@@ -1,0 +1,46 @@
+{
+    "footerLinks": [
+        {
+            "name": "Charlotte.edu",
+            "url": "https://webpages.charlotte.edu/jborishk/",
+            "target": true
+        },
+        {
+            "name": "GitHub",
+            "url": "https://justin-borishkevich.github.io/itis3135/",
+            "target": true
+        },
+        {
+            "name": "GitHub.io",
+            "url": "https://justin-borishkevich.github.io/",
+            "target": true
+        },
+        {
+            "name": "freeCodeCamp",
+            "url": "https://www.freecodecamp.org/fcc6c516045-1a59-47c1-8060-d144f04eb386",
+            "target": true
+        },
+        {
+            "name": "CodeAcademy",
+            "url": "https://www.codecademy.com/profiles/JudiciousBeaver",
+            "target": true
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/justin-borish/",
+            "target": true
+        }
+    ],
+    "designLinks": [
+        {
+        "name": "JPBVisuals",
+        "url": "JPBVisuals.com/",
+        "target": true
+        },
+        {
+        "name": "Certified in JS.",
+        "url": "https://www.freecodecamp.org/certification/fcc6c516045-1a59-47c1-8060-d144f04eb386/javascript-algorithms-and-data-structures-v8",
+        "target": true
+        }
+    ]
+}
