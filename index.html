@@ -6,6 +6,24 @@
 		<title>Justin Borishkevich's Site</title>
 		<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 		<link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
+		<script>
+			function showPage(pageId) {
+			const pages = document.querySelectorAll("section");
+				pages.forEach((page) => {
+				page.style.display = "none";
+			});		  
+			  const target = document.getElementById(pageId);
+			  if (target) target.style.display = "flex";
+			}
+		  
+			function handleHashChange() {
+			  const pageId = location.hash.replace("#", "") || "home";
+			  showPage(pageId);
+			}
+		  
+			window.addEventListener("hashchange", handleHashChange);
+			window.addEventListener("load", handleHashChange);
+		</script>
 		<style>
 			html {
 				box-sizing: border-box;
@@ -25,6 +43,7 @@
 				margin: 0;
 				padding: 0;
 				overflow-x: hidden;
+				min-height: 100vh;
 			}
 
 			main {
@@ -65,6 +84,14 @@
 				color: #FFECAD;
 			}
 
+			header, footer {
+				flex: 0 0 auto;
+			}
+
+			main {
+				flex: 1 0 auto;
+			}
+
 			#home {
 				display: flex;
 				flex-direction: column;
@@ -72,8 +99,8 @@
 				align-items: center;
 				text-align: center;
 				width: 100%;
-				height: 100vh;
-				margin-top: 0px;
+				height: calc(100vh - 60px - 45px);
+				margin-top: 60px;
 				background-image: url("itis3135/images/wallpaperflare.com_wallpaper.jpg");
 				background-size: cover;
 				background-position: 50% 50%;
@@ -96,9 +123,10 @@
 				justify-content: flex-start;
 				align-items: center;
 				text-align: center;
-				height: 108vh;
+				height: calc(100vh - 60px - 45px);
+				margin-top: 60px;				
 				width: 100%;
-				background-image: url("itis3135/images/p51_mustang_super_cool_enhanced.jpg");
+				background-image: url("itis3135/images/maxresdefault.jpg");
 				background-size: cover;
 				background-position: 50% 37%;
 			}
@@ -179,9 +207,10 @@
 				align-items: center;
 				text-align: center;
 				width: 100%;
-				height: 82.8vh;
+				height: calc(100vh - 60px - 45px);
+				margin-top: 60px;				
 				padding: 10px;
-				background-image: url("itis3135/images/wallpaperflare.com_wallpaper (2).jpg");
+				background-image: url("itis3135/images/wallpaperflare.com_wallpaper2.jpg");
 				background-size: cover;			
 				background-position: 0% 50%;
 			}
@@ -237,32 +266,36 @@
 			footer a:hover {
 				color: white;
 			}
+
+			section {
+				display: none;
+			}
 		</style>
 	</head>
 	<body>
 		<nav id="navbar">
 			<a href="#home">Home</a>
-			<a href="#links">Links</a>
+			<a href="#links">Projects</a>
 			<a href="#contact">Contact</a>
 		</nav>
 		<main>
-			<section id="home">
+			<section id="home" class="page">
 				<h1>Justin Borishkevich's Site</h1>
 
 			</section>
 
 
-			<section id="links">
+			<section id="links" class="page">
 			<h2>Course Links</h2>
 				<nav>
-					<div class="move"><a href="itis3135/" target="_blank">My ITIS 3135 Course Site</a><img class="rocket-icon" src="itis3135/images/icons8-launch-50 (white).png" alt="Rocket Icon"></div>
-					<div class="move"><a href="https://github.com/Justin-Borishkevich/" target="_blank">My Github Account</a><img class="rocket-icon" src="itis3135/images/icons8-launch-50 (white).png" alt="Rocket Icon"></div>
-					<div class="move"><a href="https://Justin-Borishkevich.github.io/" target="_blank">My Github.io</a><img class="rocket-icon" src="itis3135/images/icons8-launch-50 (white).png" alt="Rocket Icon"></div>
+					<div class="move"><a href="itis3135/" target="_blank">My ITIS 3135 Course Site</a><img class="rocket-icon" src="itis3135/images/icons8-launch-50(white).png" alt="Rocket Icon"></div>
+					<div class="move"><a href="https://github.com/Justin-Borishkevich/" target="_blank">My Github Account</a><img class="rocket-icon" src="itis3135/images/icons8-launch-50(white).png" alt="Rocket Icon"></div>
+					<div class="move"><a href="https://Justin-Borishkevich.github.io/" target="_blank">My Github.io</a><img class="rocket-icon" src="itis3135/images/icons8-launch-50(white).png" alt="Rocket Icon"></div>
 				</nav>
 			</section>
 
 			
-			<section id="contact">
+			<section id="contact" class="page">
 				<h3>Contact Information</h3>
 				<nav id="contact-links">
 					<a href="https://www.linkedin.com/in/justin-borish/" target="_blank">
@@ -271,7 +304,7 @@
 					</a>
 		
 					<a href="https://webpages.charlotte.edu/jborishk/" target="_blank" class="contact-link uncc-link">
-					<img id="uncc-logo" src="https://cdn.d1baseball.com/uploads/2023/12/21143349/charlotte.png" alt="UNCC Logo">
+					<img id="uncc-logo" src="itis3135/images/charlotte.webp" alt="UNCC Logo">
 					UNCC Webpage
 					</a>
 		
@@ -293,7 +326,7 @@
 			</section>
 		</main>
 		<footer>
-			<a href="itis3135/JPBVisuals.com/" target="_blank">JPBVisuals</a> &copy2024, 
+			<a href="itis3135/JPBVisuals.com/" target="_blank">JPBVisuals</a> &amp;copy2024, 
 			<i>Certified in <a href="https://www.freecodecamp.org/certification/fcc6c516045-1a59-47c1-8060-d144f04eb386/responsive-web-design" target="_blank">Responsive Web Design</a></i>
 			<i>, Certified in <a href="https://www.freecodecamp.org/certification/fcc6c516045-1a59-47c1-8060-d144f04eb386/javascript-algorithms-and-data-structures-v8" target="_blank">JS.</a></i>
 		</footer>
