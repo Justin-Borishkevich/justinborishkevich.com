@@ -107,6 +107,12 @@
 				background-position: 50% 50%;
 			}
 
+			#home p {
+				font-size: 2em;
+				font-family: Arsenal SC, times new roman;
+				margin-bottom: 10px;
+			}
+
 			h1 {
 				font-size: 3.5em;
 				font-family: Arsenal SC, times new roman;
@@ -119,32 +125,64 @@
 			}
 
 			#links {
-				display: flex;
+				display: grid;
 				flex-direction: column;
 				justify-content: flex-start;
 				align-items: center;
 				text-align: center;
 				height: calc(100vh - 60px - 45px);
-				margin-top: 60px;				
+				margin-top: 60px;	
+				overflow: auto;			
 				width: 100%;
-				background-image: url("itis3135/images/wallpaperflare2.jpg");
+				background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("itis3135/images/wallpaperflare2.jpg");
 				background-size: cover;
 				background-position: 50% 37%;
 			}
 
+			.container {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+			}
+
+			.content-item {
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
+			}
+
+			.content-item p:first-of-type {
+				font-size: 2em;
+				margin: 0;
+			}
+
+			.content-item p:not(:first-of-type) {
+				font-size: 1.5em;
+				margin: 0;
+				width: 480px;
+				color: #B7ACA4;
+			}
+
+			.content-item p:last-of-type {
+				font-size: 1em;
+				color: #7eb97b;
+				max-width: 250px;
+				margin: 0 auto;
+				text-align: center;
+			}
+
 			h2 {
 				margin-top: 40px;
-				font-size: 3.5em;
+				font-size: 2.5em;
 				font-family: Arsenal SC, times new roman;
+				color: #8dbba5;
 			}
 
 			#links a {
 				color: #DBD6D1;
 				font-size: 1.8em;
+				width: 55%;
 				text-decoration: none;
-				display: block;
 				font-family: Arsenal SC, times new roman;
-				margin-top: 10px;
 				transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, transform 0.25s ease-in-out;
 				text-align: center;
 				border-bottom: transparent 3px solid;
@@ -161,7 +199,13 @@
 				transform: translate(0, -5px);
 			}
 
+
+
 			.move {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
 				transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, transform 0.25s ease-in-out;
 			}
 
@@ -174,6 +218,15 @@
 				margin: 0 0 5px 0;
 				width: 30px;
 				height: 40px;
+				filter: brightness(0) invert(1);
+				transition: transform 0.25s ease-in-out;
+			}
+
+			.github-icon {
+				padding: 0;
+				margin: 0 0 5px 0;
+				width: 30px;
+				height: 30px;
 				filter: brightness(0) invert(1);
 				transition: transform 0.25s ease-in-out;
 			}
@@ -282,17 +335,44 @@
 		<main>
 			<section id="home" class="page">
 				<h1>Justin Borishkevich's Site</h1>
-
+				<p>This is my very first webpage!</p>
+				<p>Feel free to look around!</p>
 			</section>
 
 
 			<section id="links" class="page">
-			<h2>Projects</h2>
-				<nav>
-					<div class="move"><a href="itis3135/" target="_blank">My ITIS 3135 Course Site</a><img class="rocket-icon" src="itis3135/images/icons8-launch-50(white).webp" alt="Rocket Icon"></div>
-					<div class="move"><a href="https://github.com/Justin-Borishkevich/" target="_blank">My Github Account</a><img class="rocket-icon" src="itis3135/images/icons8-launch-50(white).webp" alt="Rocket Icon"></div>
-					<div class="move"><a href="https://Justin-Borishkevich.github.io/" target="_blank">My Github.io</a><img class="rocket-icon" src="itis3135/images/icons8-launch-50(white).webp" alt="Rocket Icon"></div>
-				</nav>
+				<h2>UNCC Projects</h2>
+			<div class="container">
+				<div class="content-item">
+					<p>Front-End Web App Dev</p>
+					<p>ITIS 3135 Course projects</p>
+					<p>HTML / JS / CSS</p>
+						<nav>
+							<div class="move"><a href="/itis3135/project/" target="_blank">Client Project</a><img class="rocket-icon" src="itis3135/images/icons8-launch-50(white).webp" alt="Rocket Icon"></div>
+							<div class="move"><a href="/itis3135/hobby/" target="_blank">Hobby Page</a><img class="rocket-icon" src="itis3135/images/icons8-launch-50(white).webp" alt="Rocket Icon"></div>
+							<div class="move"><a href="/itis3135/slideshow.html" target="_blank">JS slideshow</a><img class="rocket-icon" src="itis3135/images/icons8-launch-50(white).webp" alt="Rocket Icon"></div>
+							<div class="move"><a href="/itis3135/drawing.html" target="_blank">p5.js Drawing</a><img class="rocket-icon" src="itis3135/images/icons8-launch-50(white).webp" alt="Rocket Icon"></div>
+						</nav>
+				</div>
+				<div class="content-item">
+					<p>Mobile App Dev</p>
+					<p>My ITCS 4180 Android App projects</p>
+					<p>Android Studio / Java / Post Man / 
+						<br>API's like Firebase, Google Maps, and Rest</p>
+					<nav>
+						<div class="move"><a href="index.html#links" target="_blank">Comming Soon</a><img class="rocket-icon" src="itis3135/images/icons8-launch-50(white).webp" alt="Rocket Icon"></div>
+					</nav>
+				</div>
+				<div class="content-item">
+					<p>Network-Based App Dev</p>
+					<p>ITIS 4166 In depth course with a cumulative project showcasing practical web development skills</p>
+					<p>Node / Express / EJS / MVC / MongoDB / Sessions / Flash Messages / Data Modeling / Authorization / Web App Security / Bcrypt</p>
+					<nav>
+						<div class="move"><a href="https://ironpeak.justinborishkevich.com" target="_blank">Marketplace Web App</a><img class="rocket-icon" src="itis3135/images/icons8-launch-50(white).webp" alt="Rocket Icon"></div>
+						<div class="move"><a href="https://github.com/Justin-Borishkevich/Marketplace-WebApp-Project" target="_blank">Project Repository</a><img class="github-icon" src="itis3135/images/github-mark2.webp" alt="GitHub Icon"></div>
+					</nav>
+				</div>
+			</div>
 			</section>
 
 			
@@ -302,11 +382,6 @@
 					<a href="https://www.linkedin.com/in/justin-borish/" target="_blank">
 					<i class="lni lni-linkedin-original"></i>
 					LinkedIn
-					</a>
-		
-					<a href="https://webpages.charlotte.edu/jborishk/" target="_blank" class="contact-link uncc-link">
-					<img id="uncc-logo" src="itis3135/images/charlotte.webp" alt="UNCC Logo">
-					UNCC Webpage
 					</a>
 		
 					<a href="https://github.com/Justin-Borishkevich" target="_blank">
