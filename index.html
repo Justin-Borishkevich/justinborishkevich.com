@@ -125,7 +125,8 @@
 			}
 
 			#links {
-				display: grid;
+				box-sizing: border-box;
+				display: flex;
 				flex-direction: column;
 				justify-content: flex-start;
 				align-items: center;
@@ -134,7 +135,7 @@
 				margin-top: 60px;	
 				overflow: auto;			
 				width: 100%;
-				background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("itis3135/images/wallpaperflare2.jpg");
+				background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("itis3135/images/wallpaperflare2.jpg");
 				background-size: cover;
 				background-position: 50% 37%;
 			}
@@ -142,12 +143,18 @@
 			.container {
 				display: grid;
 				grid-template-columns: repeat(3, 1fr);
+				gap: 20px;
 			}
 
 			.content-item {
 				display: flex;
 				flex-direction: column;
 				gap: 15px;
+				margin-bottom: 25px;
+				border: #0A3048 2px solid;
+				border-radius: 5px;
+				padding: 20px 0px;
+				background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
 			}
 
 			.content-item p:first-of-type {
@@ -199,8 +206,6 @@
 				transform: translate(0, -5px);
 			}
 
-
-
 			.move {
 				display: flex;
 				flex-direction: column;
@@ -236,20 +241,55 @@
 			}
 
 			@media (max-width: 768px) {
-				#links {
-					height: 100vh;
-					width: 100%;
-					background-position: 50% 0%;
-					background-size: cover;
+				.container {
+					display: grid;
+					grid-template-columns: repeat(1, 1fr);
+				}
+
+				#contact.page {
+					background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("itis3135/images/wallpaperflare.com_wallpaper2.jpg");
+				}
+
+				#contact nav {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					text-align: center;
+				}
+
+				#contact.page a {
+				font-size: 2.5rem;
+				color: #d4ccc7;
+				margin: 40px 0px;
+				}
+
+				.content-item {
+					margin-bottom: 50px;
+					border: #0A3048 2px solid;
+					border-radius: 5px;
+					padding: 40px 5px;
 				}
 			}
 
-			@media (max-width: 900px) and (min-width: 768px) {
-				#links {
-					height: 120vh;
-					width: 100%;
-					background-position: 50% 32%;
-					background-size: cover;
+			@media (max-width: 1410px) and (min-width: 768px) {
+				.container {
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+					gap: 10px;
+				}
+
+				.content-item {
+					margin-bottom: 25px;
+					border: #0A3048 2px solid;
+					border-radius: 5px;
+					padding: 20px 0px;
+					background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+				}
+
+				.content-item p {
+					padding: 0px;
+					margin: 0px;
 				}
 			}
 
@@ -351,6 +391,7 @@
 							<div class="move"><a href="/itis3135/project/" target="_blank">Client Project</a><img class="rocket-icon" src="itis3135/images/icons8-launch-50(white).webp" alt="Rocket Icon"></div>
 							<div class="move"><a href="/itis3135/hobby/" target="_blank">Hobby Page</a><img class="rocket-icon" src="itis3135/images/icons8-launch-50(white).webp" alt="Rocket Icon"></div>
 							<div class="move"><a href="/itis3135/slideshow.html" target="_blank">JS slideshow</a><img class="rocket-icon" src="itis3135/images/icons8-launch-50(white).webp" alt="Rocket Icon"></div>
+							<div class="move"><a href="/itis3135/drawing.html" target="_blank">p5.js Drawing</a><img class="rocket-icon" src="itis3135/images/icons8-launch-50(white).webp" alt="Rocket Icon"></div>
 							<div class="move"><a href="/itis3135/drawing.html" target="_blank">p5.js Drawing</a><img class="rocket-icon" src="itis3135/images/icons8-launch-50(white).webp" alt="Rocket Icon"></div>
 						</nav>
 				</div>
