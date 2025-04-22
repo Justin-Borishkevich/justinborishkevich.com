@@ -143,12 +143,15 @@
 			}
 
 			.content-item {
+				box-sizing: border-box;
 				display: flex;
 				flex-direction: column;
 				justify-content: flex-start;
 				align-items: center;
 				gap: 15px;
 				margin-bottom: 25px;
+				margin-left: 0px;
+				margin-right: 0px;
 				border: #0A3048 2px solid;
 				border-radius: 5px;
 				padding: 20px 0px;
@@ -190,7 +193,6 @@
 			#links a {
 				color: #DBD6D1;
 				font-size: 1.8em;
-				width: 55%;
 				text-decoration: none;
 				font-family: Arsenal SC, times new roman;
 				transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, transform 0.25s ease-in-out;
@@ -214,7 +216,12 @@
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
+				margin-bottom: 10px;
 				transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, transform 0.25s ease-in-out;
+			}
+
+			#links nav a {
+				width: 200px;
 			}
 
 			.move:hover {
@@ -223,7 +230,7 @@
 
 			.rocket-icon {
 				padding: 0;
-				margin: 0 0 5px 0;
+				margin: 2px 0 5px 0;
 				width: 30px;
 				height: 40px;
 				filter: brightness(0) invert(1);
@@ -232,7 +239,7 @@
 
 			.github-icon {
 				padding: 0;
-				margin: 0 0 5px 0;
+				margin: 2px 0 5px 0;
 				width: 30px;
 				height: 30px;
 				filter: brightness(0) invert(1);
@@ -377,7 +384,19 @@
 				.content-item nav {
 					display : grid;
 					grid-template-columns: repeat(2, 1fr);
-					gap: 10px;
+					gap: 5px;
+					width: 100%;
+				}
+
+				#links nav a {
+					font-size: 1.2em;
+					width: 100%;
+				}
+
+				.github-icon {
+					margin: 5px 0 5px 0;
+					width: 26.5px;
+					height: 26.5px;
 				}
 
 				.content-item .single-item {
@@ -385,11 +404,19 @@
 				}
 
 				.move {
-					width: 200px;
+					width: 100%;
+					background-color: #051824;
+					border-radius: 10px;
+					margin: 0px;
+					padding-top: 5px;
+				}
+
+				.single-item {
+					max-width: 200px;
 				}
 
 				.single-item .move{
-					width: 400px;
+					width: 100%;
 				}
 
 				.content-item p:first-of-type {
@@ -463,8 +490,11 @@
 					<p>My ITCS 4180 Android App projects</p>
 					<p>Android Studio / Java / Post Man / 
 						<br>API's like Firebase, Google Maps, and Rest</p>
-					<nav class="single-item">
-						<div class="move"><a href="index.html#links" target="_blank">Comming Soon</a><img class="rocket-icon" src="itis3135/images/icons8-launch-50(white).webp" alt="Rocket Icon"></div>
+					<nav>
+						<div class="move"><a href="https://github.com/Justin-Borishkevich/Discount-Calculator" target="_blank">Discount Calculator</a><img class="github-icon" src="itis3135/images/github-mark2.webp" alt="github-icon"></div>
+						<div class="move"><a href="https://github.com/Justin-Borishkevich/Color-Selector" target="_blank">Color Selector</a><img class="github-icon" src="itis3135/images/github-mark2.webp" alt="github-icon"></div>
+						<div class="move"><a href="https://github.com/Justin-Borishkevich/ToDo-List-Room" target="_blank">ToDo List | Room ORM</a><img class="github-icon" src="itis3135/images/github-mark2.webp" alt="github-icon"></div>
+						<div class="move"><a href="https://github.com/Justin-Borishkevich/Library-App" target="_blank">Library App</a><img class="github-icon" src="itis3135/images/github-mark2.webp" alt="github-icon"></div>
 					</nav>
 				</div>
 				<div class="content-item">
