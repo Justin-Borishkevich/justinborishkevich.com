@@ -29,6 +29,8 @@
 				box-sizing: border-box;
 				font-size: 16px;
 				scroll-padding-top: 62px;
+				scrollbar-width: thin;
+				scrollbar-color: #253143 #f0f0f000;
 			}
 
 			body {
@@ -43,7 +45,11 @@
 				margin: 0;
 				padding: 0;
 				overflow-x: hidden;
-				min-height: 100vh;
+				height: 100vh;
+			}
+
+			::-webkit-scrollbar {
+				display: none;
 			}
 
 			main {
@@ -53,6 +59,7 @@
 				padding: 0;
 				background-color: black;
 				flex: 1 0 auto;
+				overflow-y: auto;
 			}
 
 			#navbar {
@@ -302,22 +309,25 @@
 			}
 
 			footer {
-				box-sizing: border-box;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				width: 100%;
-				text-align: center;
-				height: 45px;
+				height: 40px;
 				background-color: #051824;
 				color: #F9F3F1;
 				font-family: Arsenal SC, times new roman;
-				padding: 10px;
-				padding-top: 20px;
 			}
 
 			footer a {
-			color: #B7ACA4;
-			font-size: 1.2rem;
-			font-weight: bold;
-			transition: color 0.2s ease-in-out;
+				color: #B7ACA4;
+				font-size: 1em;
+				font-weight: bold;
+				transition: color 0.2s ease-in-out;
+			}
+
+			footer p {
+				font-size: 1em;
 			}
 
 			footer a:hover {
@@ -436,12 +446,29 @@
 				}
 				
 				footer {
-					height: 80px;
+					height: 40px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+
+				footer a {
+					font-size: 1em;
+				}
+
+				footer p {
+					font-size: 1em;
 				}
 			}
 
 			@media (max-width: 768px) {
-				
+				footer a {
+					font-size: 0.8em;
+				}
+
+				footer p {
+					font-size: 0.8em;
+				}
 			}
 		</style>
 	</head>
@@ -541,9 +568,10 @@
 			</section>
 		</main>
 		<footer>
-			<a href="itis3135/JPBVisuals.com/" target="_blank">JPBVisuals</a> &amp;copy2024, 
-			<i>Certified in <a href="https://www.freecodecamp.org/certification/fcc6c516045-1a59-47c1-8060-d144f04eb386/responsive-web-design" target="_blank">Responsive Web Design</a></i>
-			<i>, Certified in <a href="https://www.freecodecamp.org/certification/fcc6c516045-1a59-47c1-8060-d144f04eb386/javascript-algorithms-and-data-structures-v8" target="_blank">JS.</a></i>
+			<p><a href="itis3135/JPBVisuals.com/" target="_blank">JPBVisuals</a> &amp;copy2024, 
+				<i>Certified in <a href="https://www.freecodecamp.org/certification/fcc6c516045-1a59-47c1-8060-d144f04eb386/responsive-web-design" target="_blank">Responsive Web Design</a></i>
+				<i>, Certified in <a href="https://www.freecodecamp.org/certification/fcc6c516045-1a59-47c1-8060-d144f04eb386/javascript-algorithms-and-data-structures-v8" target="_blank">JS.</a></i>
+			</p>
 		</footer>
 	</body>
 </html>
